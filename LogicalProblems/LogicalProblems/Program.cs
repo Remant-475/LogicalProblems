@@ -10,6 +10,7 @@ namespace LogicalProblems
             Console.WriteLine("Select 1: Fibonacci Series");
             Console.WriteLine("Select 2: Perfect NUmber");
             Console.WriteLine("Select 3: Prime Number");
+            Console.WriteLine("Select 4: Reverse Number");
 
             int Option = int.Parse(Console.ReadLine());
             switch (Option)
@@ -25,6 +26,10 @@ namespace LogicalProblems
                 case 3:
                     PrimeNum Prime = new PrimeNum();
                     Prime.PrimeNumber();
+                    break;
+                case 4:
+                    ReverseNumber reverse = new ReverseNumber();
+                    reverse.Reverse();
                     break;
             }
 
