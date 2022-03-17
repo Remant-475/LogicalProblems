@@ -8,6 +8,7 @@ namespace LogicalProblems
         {
             Console.WriteLine("Enter your Option");
             Console.WriteLine("Select 1: Fibonacci Series");
+            Console.WriteLine("Select 2: Perfect NUmber");
 
             int Option = int.Parse(Console.ReadLine());
             switch (Option)
@@ -15,6 +16,10 @@ namespace LogicalProblems
                 case 1:
                     Fibbonacci fibonaci = new Fibbonacci();
                     fibonaci.FibbonacciSeries();
+                    break;
+                case 2:
+                    PerfectNum Perfect = new PerfectNum();
+                    Perfect.PerfectNumber();
                     break;
 
             }
